@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <ScrollView
+      android:layout_margin="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <include
+
+              android:id="@+id/ads"
+
+              layout="@layout/largebanner"/>
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_gravity="center"
+              android:src="@drawable/myimage"/>
+          <TextView
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/TitleStyle"
+              android:text="Khin Htet Htet Hsu"></TextView>
+          <LinearLayout
+              android:layout_marginVertical="20dp"
+              android:background="@drawable/aboutbg"
+              android:elevation="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_marginLeft="10dp"
+                  android:layout_gravity="center"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/ic_gmail"
+                  android:tint="@color/colorPrimary"/>
+              <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Gmail"
+                      android:textColor="@color/colorPrimary"
+                      android:textSize="20sp"
+                      android:paddingLeft="20dp"
+                      android:gravity="fill"></TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      style="@style/TitleStyle"
+                      android:text="itonemm@gmail.com"></TextView>
+              </LinearLayout>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginVertical="20dp"
+              android:background="@drawable/aboutbg"
+              android:elevation="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_marginLeft="10dp"
+                  android:layout_gravity="center"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/ic_phone"
+                  android:tint="@color/colorPrimary"/>
+              <LinearLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Phone"
+                      android:textColor="@color/colorPrimary"
+                      android:textSize="20sp"
+                      android:paddingLeft="20dp"
+                      android:gravity="fill"></TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      style="@style/TitleStyle"
+                      android:text="09976375970"></TextView>
+              </LinearLayout>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginVertical="20dp"
+              android:background="@drawable/aboutbg"
+              android:elevation="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageView
+                  android:layout_marginLeft="10dp"
+                  android:layout_gravity="center"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/ic_address"
+                  android:tint="@color/colorPrimary"/>
+              <LinearLayout
+
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="500dp"
+                  android:orientation="vertical">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Address"
+                      android:textColor="@color/colorPrimary"
+                      android:textSize="20sp"
+                      android:paddingLeft="20dp"
+                      android:gravity="fill">
+
+                  </TextView>
+
+                  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:map="http://schemas.android.com/apk/res-auto"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:id="@+id/map"
+                      android:name="com.google.android.gms.maps.SupportMapFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      tools:context=".MapsActivity" />
+
+
+              </LinearLayout>
+
+          </LinearLayout>
+
+          <include
+              layout="@layout/bottomads"/>
+      </LinearLayout>
+  </ScrollView>
+
+
+</FrameLayout>
